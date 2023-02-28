@@ -89,7 +89,11 @@ User can select the source data type from the dropdown list. The "LOCAL_TEXT_FIL
 
 ## Step 6 save/load the project
 
-![select_source](screen_capture/select_source_db.JPG?raw=true)
+![Model](screen_capture/select_source_db.JPG?raw=true)
+
+![Model](screen_capture/Profiling.JPG?raw=true)
+
+![Model](screen_capture/Profiling_result.JPG?raw=true)
  
  
 
