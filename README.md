@@ -1,4 +1,4 @@
-# ChoRUS Privacy Scan Tools
+# ChoRUS Privacy Scan Tool
 
 ## Prerequisite:
 Windows 10  or Mac with python3.8 or python3.9 ( with Git tools )
@@ -17,26 +17,24 @@ $
 ~~~
 python3.8 -m venv ChoRUS_env
 ~~~
-### 3. Active the virtual environment
+### 4. Active the virtual environment
 ~~~
 source ChoRUS_env/bin/activate
-
 (ChoRUS_env) $
- 
 ~~~
 
-### 4. Clone the package from Github.com 
+### 5. Clone the package from Github.com 
 ~~~
 git clone https://github.com/Luyaochen1/ChoRUS_Privacy_Scan.git
 cd ChoRUS_Privacy_Scan
 ~~~
 
-### 5. Install the required python package
+### 6. Install the required python package
 ~~~
 python -m pip install -r requirement.txt
 ~~~
 
-### 6. run the python privacy Scan Tools
+### 7. run the python Privacy Scan Tool
 ~~~
 python main.py
 ~~~
@@ -56,24 +54,24 @@ c:\my_folder
 ~~~
 python3.8 -m venv ChoRUS_env
 ~~~
-### 3. Active the virtual environment
+### 4. Active the virtual environment
 ~~~
 ChoRUS_env\Scripts\activate.bat
 (ChoRUS_env) c:\my_folder>
 ~~~
 
-### 4. Clone the package from Github.com 
+### 5. Clone the package from Github.com 
 ~~~
 git clone https://github.com/Luyaochen1/ChoRUS_Privacy_Scan.git
 cd ChoRUS_Privacy_Scan
 ~~~
 
-### 5. Install the required python package
+### 6. Install the required python package
 ~~~
 python -m pip install -r requirement.txt
 ~~~
 
-### 6. run the python privacy Scan Tools
+### 7. run the python Privacy Scan Tool
 ~~~
 python main.py
 ~~~
