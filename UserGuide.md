@@ -87,6 +87,8 @@ User can select the source data type from the dropdown list. The "LOCAL_TEXT_FIL
 ## Step 5 view the PHI data scan
 
 
+## Step 6 save/load the project
+
 
  
  
