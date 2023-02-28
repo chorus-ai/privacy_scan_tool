@@ -16,7 +16,9 @@ available_dbs = {'PSQL_MIMIC': ["postgresql://userid:password@192.168.0.199:5432
 
 Where mimic is the database name and mimiciii is the data schema name
 
-### Plain text files :  Comma-separated values files with header. You can select the folder contains the source data in the tool
+### Plain text files :  
+
+Comma-separated values files with header. You can select the folder contains the source data in the tool.
 
 Please don’t change the 'LOCAL_TEXT_FILES': 'LOCAL_TEXT_FILES' session
  
@@ -72,7 +74,20 @@ cd ChoRUS_Privacy_Scan
 python main.py
 ~~~
  
- 
+## Step 1 decide the source data type 
+User can select the source data type from the dropdown list. The "LOCAL_TEXT_FILE" is for local csv files.
+
+
+## Step 2 select the source tables to scan 
+
+## Step 3 run data profiling 
+
+## Step 4 run PHI data scan
+
+## Step 5 view the PHI data scan
+
+
+
  
  
 
