@@ -77,8 +77,8 @@ python main.py
 ## Step 1 decide the source data type 
 User can select the source data type from the dropdown list. The "LOCAL_TEXT_FILE" is for local csv files.
 
-
 ## Step 2 select the source tables to scan 
+
 
 ## Step 3 run data profiling 
 
@@ -89,7 +89,7 @@ User can select the source data type from the dropdown list. The "LOCAL_TEXT_FIL
 
 ## Step 6 save/load the project
 
-
+![Model](screen_capture/select_source_db.JPG?raw=true)
  
  
 
