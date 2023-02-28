@@ -67,6 +67,8 @@ class Ui_ViewPHIScan(object):
         for c in range(model.columnCount()):
             for r in range(model.rowCount()):
                 text = model.data(model.index(r, c))
+                if len(text) > 200:
+                     text = "Text too long to save to a file"
                 if c == 3 and text =='1.0' :
                     sheet.write(r+1, c+1, text,st)
                 else:

@@ -16,7 +16,7 @@ import argparse
 # %%
 
 
-from AutoDeidentifyNet import *
+# from AutoDeidentifyNet import *
 
 from sklearn.metrics import f1_score
 from sklearn.metrics import confusion_matrix,accuracy_score, roc_curve, auc, precision_recall_curve, average_precision_score
@@ -165,12 +165,12 @@ HIPPA = ["Financial Number",
 "Discharge Date & Time",
 "Person Address- Zip Code",
 "Birth Date",
-#"Age",
+"Age",
 "Ethnic Group",
 "Ethnic Group.1",
 "Race",
 "Race.1",
-"Sex",
+# "Sex",
 'subject_id',
 'admittime',
 'dischtime',
@@ -180,7 +180,7 @@ HIPPA = ["Financial Number",
 'marital_status',
 'ethnicity',
 'subject_id',
-'gender',
+# 'gender',
 'dod_hosp',
 'dod_ssn',
 'mimic_id',

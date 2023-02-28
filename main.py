@@ -16,6 +16,8 @@ from json_data_viwer import Ui_Json_Viewer
 
 from config import *
 
+from phi_scan import phi_scan
+import pandas as pd
 
 from db_tools import get_table_profile
 
@@ -59,7 +61,39 @@ class DB_Profile_Thread(QtCore.QThread):
         self.source_profile =  json.loads(json.dumps(self.source_profile))  
 
 
-  
+class PHI_Scan_Thread(QtCore.QThread):
+    log = QtCore.pyqtSignal(str)
+
+    def __init__(self, parent=None):
+        super(PHI_Scan_Thread, self).__init__(parent)
+        self.status= ''
+        self._items = []
+        self.phi_scan_result_json ={}
+
+
+    def setItems(self, items,source_db):
+        if not self.isRunning():
+            self._items[:] = items
+            self._source_db = source_db
+
+    def run(self):
+        for item in self._items:
+            self.log.emit('processing:  %s' % item  )
+            original_data_path = './data_profile/table_{}_sample.csv'.format(item)
+            json_file_path = './data_profile/table_{}_profile.json'.format(item)
+            model_path = PHI_SCAN_MODEL
+            output_path = './data_profile/table_{}_phi.csv'.format(item)
+            print(item)
+            phi_scan(original_data_path,json_file_path,model_path,output_path)
+            phi_scan_result = pd.read_csv(output_path,index_col=0)          
+
+            for index,row in  phi_scan_result.iterrows():
+                self.phi_scan_result_json['{}.{}'.format(item,index)] = {'method':'0','offset':'','predict_probability':row['ML prediction result'],'predict_result':row['ML prediction result 0/1']}
+
+            self.log.emit('finished:  %s' % item  )
+        self.phi_scan_result_json =  json.loads(json.dumps(self.phi_scan_result_json))  
+
+
 
 
 # source_tables = ['chartevents', 'inputevents_mv', 'admissions', 'callout', 'caregivers', 'ccs_multi_level_dx', 'ccs_single_level_dx', 'icustays', 'noteevents', 'cptevents', 'd_cpt', 'd_icd_diagnoses', 'd_icd_procedures', 'd_items', 'd_labitems', 'datetimeevents', 'diagnoses_icd', 'inputevents_cv', 'drgcodes', 'gcpt_admission_location_to_concept', 'gcpt_admission_type_to_concept', 'gcpt_admissions_diagnosis_to_concept', 'gcpt_atb_to_concept', 'gcpt_care_site', 'gcpt_chart_label_to_concept', 'gcpt_chart_observation_to_concept', 'gcpt_continuous_unit_carevue', 'gcpt_cpt4_to_concept', 'gcpt_cv_input_label_to_concept', 'gcpt_datetimeevents_to_concept', 'gcpt_derived_to_concept', 'gcpt_discharge_location_to_concept', 'gcpt_drgcode_to_concept', 'gcpt_ethnicity_to_concept', 'gcpt_heart_rhythm_to_concept', 'gcpt_inputevents_drug_to_concept', 'gcpt_insurance_to_concept', 'gcpt_lab_label_to_concept', 'gcpt_lab_unit_to_concept', 'gcpt_lab_value_to_concept', 'gcpt_labs_from_chartevents_to_concept', 'gcpt_labs_specimen_to_concept', 'gcpt_map_route_to_concept', 'gcpt_marital_status_to_concept', 'gcpt_microbiology_specimen_to_concept', 'gcpt_mv_input_label_to_concept', 'gcpt_note_category_to_concept', 'gcpt_note_section_to_concept', 'gcpt_org_name_to_concept', 'gcpt_output_label_to_concept', 'gcpt_prescriptions_ndcisnullzero_to_concept', 'gcpt_procedure_to_concept', 'gcpt_religion_to_concept', 'gcpt_resistance_to_concept', 'gcpt_route_to_concept', 'gcpt_seq_num_to_concept', 'gcpt_spec_type_to_concept', 'gcpt_unit_doseera_concept_id', 'labevents', 'heightfirstday', 'patients', 'outputevents', 'microbiologyevents', 'mimic_140features_adm', 'mimic_140features_ts', 'mimic_feature_dict', 'mimic_general_feature_mapping', 'mimic_ts_feature_mapping', 'prescriptions', 'procedureevents_mv', 'procedures_icd', 'services', 'transfers', 'weightfirstday', 'stroke_icds', 'depression_def']
@@ -291,13 +325,10 @@ class Ui_DataMappingTools(object):
 
     def scan_phi(self):
 
-        from phi_scan import phi_scan
-        import pandas as pd
-
         phi_scan_result_json={}
         
         self.Profile_logs.clear()
-        self.Profile_logs.appendPlainText('PHI Scanning ')
+        self.Profile_logs.appendPlainText('PHI Scanning... ')
 
         for phi_scan_table in self.selected_tables_list:
             original_data_path = './data_profile/table_{}_sample.csv'.format(phi_scan_table)
@@ -331,9 +362,18 @@ class Ui_DataMappingTools(object):
 
         back_run_list = self.selected_tables_list
       
-        if not self._worker.isRunning():
-            self._worker.setItems(back_run_list,self.SourceDataSet.currentText(),data_profile_sample_size,self.text_folder)
-            self._worker.start()     
+        if not self._profile_worker.isRunning() and not self._scan_worker.isRunning():
+            self._profile_worker.setItems(back_run_list,self.SourceDataSet.currentText(),data_profile_sample_size,self.text_folder)
+            self._profile_worker.start()     
+
+ 
+    def phi_scan_thread(self): 
+
+        back_run_list = self.selected_tables_list
+      
+        if not self._scan_worker.isRunning() and not self._profile_worker.isRunning() :
+            self._scan_worker.setItems(back_run_list,self.SourceDataSet.currentText())
+            self._scan_worker.start()   
 
 
     def validate_mapping_func(self):
@@ -363,9 +403,13 @@ class Ui_DataMappingTools(object):
         # print(json.dumps(self.target_mapping,indent=4))    
 
     def copy_profile_data(self):
-        self.source_mapping = self._worker.source_mapping
-        self.source_profile = self._worker.source_profile
+        self.source_mapping = self._profile_worker.source_mapping
+        self.source_profile = self._profile_worker.source_profile
         self.toLog('all finished... \n ')           
+
+    def copy_scan_data(self):
+        self.selected_phi_method = self._scan_worker.phi_scan_result_json
+        self.toLog('all finished... \n ') 
 
     def toLog(self, txt):
         self.Profile_logs.appendPlainText(txt)
@@ -397,10 +441,18 @@ class Ui_DataMappingTools(object):
         self.centralwidget = QtWidgets.QWidget(DataMappingTools)
         self.centralwidget.setObjectName("centralwidget")
 
-        self._worker = DB_Profile_Thread(self.centralwidget)
-        self._worker.log.connect(self.toLog)
-        self._worker.started.connect(lambda: self.toLog('start... \n '))
-        self._worker.finished.connect(lambda: self.copy_profile_data())
+        self._profile_worker = DB_Profile_Thread(self.centralwidget)
+        self._profile_worker.log.connect(self.toLog)
+        self._profile_worker.started.connect(lambda: self.toLog('Profiling start... \n '))
+        self._profile_worker.finished.connect(lambda: self.copy_profile_data())
+
+
+
+        self._scan_worker = PHI_Scan_Thread(self.centralwidget)
+        self._scan_worker.log.connect(self.toLog)
+        self._scan_worker.started.connect(lambda: self.toLog('PHI Scan start... \n '))
+        self._scan_worker.finished.connect(lambda: self.copy_scan_data())
+
 
         self.TargetDataSet = QtWidgets.QComboBox(self.centralwidget)
         self.TargetDataSet.addItems(target_models.keys())
@@ -490,7 +542,9 @@ class Ui_DataMappingTools(object):
         self.view_DB_Profile.setFont(font)
         self.view_DB_Profile.setObjectName("view_DB_Profile")
 
-        self.phi_scan = QtWidgets.QPushButton(self.centralwidget, clicked = lambda: self.scan_phi())
+        # two function: phi_scan_thread  ( run at background) / scan_phi
+        # self.phi_scan = QtWidgets.QPushButton(self.centralwidget, clicked = lambda: self.scan_phi())
+        self.phi_scan = QtWidgets.QPushButton(self.centralwidget, clicked = lambda: self.phi_scan_thread())
         self.phi_scan.setGeometry(QtCore.QRect(370, 540, 140, 41))
         font = QtGui.QFont()
         font.setPointSize(12)
