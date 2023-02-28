@@ -302,7 +302,7 @@ class Ui_DataMappingTools(object):
         for phi_scan_table in self.selected_tables_list:
             original_data_path = './data_profile/table_{}_sample.csv'.format(phi_scan_table)
             json_file_path = './data_profile/table_{}_profile.json'.format(phi_scan_table)
-            model_path = './phi_scan/XGBClassifier.json'
+            model_path = PHI_SCAN_MODEL
             output_path = './data_profile/table_{}_phi.csv'.format(phi_scan_table)
             print(phi_scan_table)
             phi_scan(original_data_path,json_file_path,model_path,output_path)

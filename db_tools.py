@@ -1,6 +1,6 @@
 # from matplotlib.style import available
-# import psycopg2
-from sqlalchemy import create_engine,inspect
+import psycopg2
+from sqlalchemy import create_engine,text # inspect
 import pandas as pd
 import json,os,glob
 import numpy

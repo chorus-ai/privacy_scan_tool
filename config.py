@@ -19,3 +19,5 @@ target_dbs = {'OMOP_5.4_staging': ["postgresql://gpadmin:dataroad@129.106.31.45:
         }
 
 data_profile_sample_size = 500  
+
+PHI_SCAN_MODEL = './phi_scan/XGBClassifier(V220230227).json'
