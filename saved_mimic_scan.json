@@ -1,0 +1,2600 @@
+{
+    "selected_tables_list": [
+        "mimic_admissions_test.csv",
+        "mimic_patients_test.csv",
+        "mimic_icustays_test.csv",
+        "mimic_services_test.csv"
+    ],
+    "selected_mappings": [],
+    "source_mapping": {
+        "mimic_admissions_test.csv": {
+            "row_id": [],
+            "subject_id": [],
+            "hadm_id": [],
+            "admittime": [],
+            "dischtime": [],
+            "deathtime": [],
+            "admission_type": [
+                "EMERGENCY",
+                "ELECTIVE",
+                "NEWBORN",
+                "URGENT"
+            ],
+            "admission_location": [
+                "EMERGENCY ROOM ADMIT",
+                "PHYS REFERRAL/NORMAL DELI",
+                "CLINIC REFERRAL/PREMATURE",
+                "TRANSFER FROM HOSP/EXTRAM",
+                "** INFO NOT AVAILABLE **",
+                "TRANSFER FROM SKILLED NUR",
+                "TRANSFER FROM OTHER HEALT"
+            ],
+            "discharge_location": [
+                "HOME",
+                "HOME HEALTH CARE",
+                "SNF",
+                "DEAD/EXPIRED",
+                "REHAB/DISTINCT PART HOSP",
+                "LONG TERM CARE HOSPITAL",
+                "SHORT TERM HOSPITAL",
+                "DISC-TRAN CANCER/CHLDRN H",
+                "LEFT AGAINST MEDICAL ADVI",
+                "DISCH-TRAN TO PSYCH HOSP",
+                "HOSPICE-HOME",
+                "OTHER FACILITY",
+                "ICF"
+            ],
+            "insurance": [
+                "Medicare",
+                "Private",
+                "Medicaid",
+                "Government",
+                "Self Pay"
+            ],
+            "language": [
+                "ENGL",
+                "SPAN",
+                "RUSS",
+                "PTUN",
+                "MAND",
+                "CANT",
+                "VIET",
+                "PORT",
+                "CAPE",
+                "GREE",
+                "HIND",
+                "HAIT",
+                "ALBA"
+            ],
+            "religion": [
+                "CATHOLIC",
+                "NOT SPECIFIED",
+                "UNOBTAINABLE",
+                "PROTESTANT QUAKER",
+                "JEWISH",
+                "OTHER",
+                "EPISCOPALIAN",
+                "GREEK ORTHODOX",
+                "CHRISTIAN SCIENTIST",
+                "MUSLIM",
+                "JEHOVAH'S WITNESS",
+                "BUDDHIST",
+                "BAPTIST",
+                "HINDU"
+            ],
+            "marital_status": [
+                "MARRIED",
+                "SINGLE",
+                "WIDOWED",
+                "DIVORCED",
+                "SEPARATED",
+                "UNKNOWN (DEFAULT)",
+                "LIFE PARTNER"
+            ],
+            "ethnicity": [
+                "WHITE",
+                "BLACK/AFRICAN AMERICAN",
+                "UNKNOWN/NOT SPECIFIED",
+                "HISPANIC OR LATINO",
+                "OTHER",
+                "ASIAN",
+                "UNABLE TO OBTAIN",
+                "HISPANIC/LATINO - CUBAN",
+                "PATIENT DECLINED TO ANSWER",
+                "MULTI RACE ETHNICITY",
+                "WHITE - OTHER EUROPEAN",
+                "ASIAN - CHINESE",
+                "WHITE - RUSSIAN",
+                "WHITE - BRAZILIAN",
+                "ASIAN - ASIAN INDIAN",
+                "HISPANIC/LATINO - PUERTO RICAN",
+                "HISPANIC/LATINO - GUATEMALAN",
+                "ASIAN - VIETNAMESE"
+            ],
+            "edregtime": [],
+            "edouttime": [],
+            "diagnosis": [],
+            "hospital_expire_flag": [
+                "0",
+                "1"
+            ],
+            "has_chartevents_data": [
+                "1",
+                "0"
+            ],
+            "mimic_id": []
+        },
+        "mimic_patients_test.csv": {
+            "row_id": [],
+            "subject_id": [],
+            "gender": [
+                "M",
+                "F"
+            ],
+            "dob": [],
+            "dod": [],
+            "dod_hosp": [],
+            "dod_ssn": [],
+            "expire_flag": [
+                "0",
+                "1"
+            ],
+            "mimic_id": [],
+            "universal_id": []
+        },
+        "mimic_icustays_test.csv": {
+            "row_id": [],
+            "subject_id": [],
+            "hadm_id": [],
+            "icustay_id": [],
+            "dbsource": [
+                "carevue",
+                "metavision"
+            ],
+            "first_careunit": [
+                "MICU",
+                "CSRU",
+                "NICU",
+                "SICU",
+                "CCU",
+                "TSICU"
+            ],
+            "last_careunit": [
+                "MICU",
+                "CSRU",
+                "SICU",
+                "NICU",
+                "TSICU",
+                "CCU"
+            ],
+            "first_wardid": [
+                "23",
+                "14",
+                "56",
+                "52",
+                "57",
+                "33",
+                "15",
+                "50",
+                "12",
+                "7",
+                "26",
+                "38",
+                "16",
+                "22"
+            ],
+            "last_wardid": [
+                "14",
+                "23",
+                "56",
+                "52",
+                "33",
+                "15",
+                "57",
+                "50",
+                "12",
+                "7",
+                "26",
+                "22",
+                "16",
+                "38"
+            ],
+            "intime": [],
+            "outtime": [],
+            "los": [],
+            "mimic_id": []
+        },
+        "mimic_services_test.csv": {
+            "row_id": [],
+            "subject_id": [],
+            "hadm_id": [],
+            "transfertime": [],
+            "prev_service": [
+                "MED",
+                "CMED",
+                "OMED",
+                "NSURG",
+                "SURG",
+                "ORTHO",
+                "TRAUM",
+                "GYN",
+                "GU",
+                "OBS",
+                "TSURG",
+                "VSURG",
+                "CSURG",
+                "NMED",
+                "ENT"
+            ],
+            "curr_service": [
+                "MED",
+                "CMED",
+                "CSURG",
+                "NB",
+                "SURG",
+                "NSURG",
+                "TRAUM",
+                "NMED",
+                "VSURG",
+                "OMED",
+                "TSURG",
+                "ORTHO",
+                "GYN",
+                "OBS",
+                "ENT"
+            ],
+            "mimic_id": []
+        }
+    },
+    "source_tables": [
+        "mimic_admissions_test.csv",
+        "mimic_caregivers_test.csv",
+        "mimic_chartevents_test.csv",
+        "mimic_cptevents_test.csv",
+        "mimic_icustays_test.csv",
+        "mimic_patients_test.csv",
+        "mimic_prescriptions_test.csv",
+        "mimic_services_test.csv",
+        "mimic_transfers_test.csv"
+    ],
+    "source_db": "LOCAL_TEXT_FILES",
+    "target_model": "CDMV5.4",
+    "source_profile": {
+        "mimic_admissions_test.csv": [
+            {
+                "column_name": "row_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2739', '11835', '28680', '4810', '30910']",
+                "statistics": {
+                    "min": 123.0,
+                    "max": 58965.0,
+                    "mode": "[ 8331.459,  8743.353, 12273.873, 12921.135, 15863.235]",
+                    "median": 30985.629,
+                    "sum": 15643544.0,
+                    "mean": 31287.088,
+                    "variance": 287598703.2107,
+                    "stddev": 16958.7353,
+                    "skewness": -0.0201,
+                    "kurtosis": -1.2614,
+                    "histogram": {
+                        "bin_edges": "[  123. ,  6007.2, 11891.4, ... , 47196.6, 53080.8, 58965. ]",
+                        "bin_counts": "[30., 49., 60., 49., 52., 44., 39., 55., 60., 62.]"
+                    },
+                    "quantiles": {
+                        "0": 15980.919,
+                        "1": 30985.629,
+                        "2": 46961.232
+                    },
+                    "median_abs_deviation": 15240.078,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.001,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.0,
+                        "skewness": 0.03,
+                        "kurtosis": 0.0,
+                        "histogram_and_quantiles": 0.004,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "subject_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['97212', '4604', '40695', '12933', '31529']",
+                "statistics": {
+                    "min": 109.0,
+                    "max": 99965.0,
+                    "mode": "[ 7148.848, 10044.672, 11742.224, 94922.272]",
+                    "median": 25372.568,
+                    "sum": 18505149.0,
+                    "mean": 37010.298,
+                    "variance": 867501605.893,
+                    "stddev": 29453.3802,
+                    "skewness": 0.7364,
+                    "kurtosis": -0.8374,
+                    "histogram": {
+                        "bin_edges": "[  109. , 10094.6, 20080.2, ... , 79993.8, 89979.4, 99965. ]",
+                        "bin_counts": "[ 88., 104.,  99.,  25.,  23., ... , 32., 29., 33., 29., 38.]"
+                    },
+                    "quantiles": {
+                        "0": 13040.352,
+                        "1": 25372.568,
+                        "2": 62219.432
+                    },
+                    "median_abs_deviation": 16309.8133,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.006,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.001,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 498,
+                    "unique_ratio": 0.996,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "hadm_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['184692', '145787', '108890', '195484', '140140']",
+                "statistics": {
+                    "min": 100058.0,
+                    "max": 199967.0,
+                    "mode": "[128881.7465, 147664.6385]",
+                    "median": 147639.6613,
+                    "sum": 74574820.0,
+                    "mean": 149149.64,
+                    "variance": 826130974.796,
+                    "stddev": 28742.4942,
+                    "skewness": 0.0941,
+                    "kurtosis": -1.1969,
+                    "histogram": {
+                        "bin_edges": "[100058. , 110048.9, 120039.8, ... , 179985.2, 189976.1, 199967. ]",
+                        "bin_counts": "[46., 58., 55., 48., 56., 42., 53., 40., 50., 52.]"
+                    },
+                    "quantiles": {
+                        "0": 124136.069,
+                        "1": 147639.6613,
+                        "2": 175139.6135
+                    },
+                    "median_abs_deviation": 24527.6595,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.001,
+                        "kurtosis": 0.0,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.91,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "admittime",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2131-11-16 00:22:00', '2114-05-28 17:48:00', '2121-12-20 10:30:00',\n '2105-05-10 05:14:00', '2185-05-19 11:39:00']",
+                "statistics": {
+                    "min": "2100-09-25 17:03:00",
+                    "max": "2204-08-09 17:19:00",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d %H:%M:%S']",
+                    "times": {
+                        "datetime": 0.018
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "dischtime",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2151-07-18 18:00:00', '2103-07-16 17:00:00', '2188-09-05 17:05:00',\n '2179-08-02 13:38:00', '2198-01-29 15:30:00']",
+                "statistics": {
+                    "min": "2100-10-01 15:30:00",
+                    "max": "2204-08-15 17:35:00",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d %H:%M:%S']",
+                    "times": {
+                        "datetime": 0.017
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "deathtime",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2148-11-03 03:30:00', '2130-03-22 12:00:00', '2195-12-03 04:30:00',\n '2141-03-14 12:00:00', '2132-10-09 23:04:00']",
+                "statistics": {
+                    "min": "2102-03-26 21:06:00",
+                    "max": "2203-03-08 05:15:00",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d %H:%M:%S']",
+                    "times": {
+                        "datetime": 0.006
+                    },
+                    "unique_count": 58,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 442,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[29, 39, 53, 83, 85, ... , 5952, 5962, 5971, 5991, 5998]"
+                    },
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "admission_type",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['NEWBORN', 'ELECTIVE', 'EMERGENCY', 'NEWBORN', 'EMERGENCY']",
+                "statistics": {
+                    "unique_count": 4,
+                    "unique_ratio": 0.008,
+                    "categories": "['EMERGENCY', 'ELECTIVE', 'NEWBORN', 'URGENT']",
+                    "gini_impurity": 0.4604,
+                    "unalikeability": 0.4613,
+                    "categorical_count": {
+                        "EMERGENCY": 355,
+                        "ELECTIVE": 67,
+                        "NEWBORN": 65,
+                        "URGENT": 13
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "admission_location",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['TRANSFER FROM HOSP/EXTRAM', 'TRANSFER FROM HOSP/EXTRAM',\n 'EMERGENCY ROOM ADMIT', 'PHYS REFERRAL/NORMAL DELI',\n 'EMERGENCY ROOM ADMIT']",
+                "statistics": {
+                    "unique_count": 7,
+                    "unique_ratio": 0.014,
+                    "categories": "['EMERGENCY ROOM ADMIT', ... , 'TRANSFER FROM OTHER HEALT']",
+                    "gini_impurity": 0.7342,
+                    "unalikeability": 0.7356,
+                    "categorical_count": {
+                        "EMERGENCY ROOM ADMIT": 175,
+                        "PHYS REFERRAL/NORMAL DELI": 130,
+                        "CLINIC REFERRAL/PREMATURE": 114,
+                        "TRANSFER FROM HOSP/EXTRAM": 77,
+                        "** INFO NOT AVAILABLE **": 2,
+                        "TRANSFER FROM SKILLED NUR": 1,
+                        "TRANSFER FROM OTHER HEALT": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "discharge_location",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['SNF', 'SNF', 'HOME HEALTH CARE', 'HOME', 'HOME']",
+                "statistics": {
+                    "unique_count": 13,
+                    "unique_ratio": 0.026,
+                    "categories": "['HOME', 'HOME HEALTH CARE', ... , 'OTHER FACILITY', 'ICF']",
+                    "gini_impurity": 0.7895,
+                    "unalikeability": 0.7911,
+                    "categorical_count": {
+                        "HOME": 174,
+                        "HOME HEALTH CARE": 112,
+                        "SNF": 60,
+                        "DEAD/EXPIRED": 58,
+                        "REHAB/DISTINCT PART HOSP": 48,
+                        "LONG TERM CARE HOSPITAL": 17,
+                        "SHORT TERM HOSPITAL": 13,
+                        "DISC-TRAN CANCER/CHLDRN H": 7,
+                        "LEFT AGAINST MEDICAL ADVI": 4,
+                        "DISCH-TRAN TO PSYCH HOSP": 3,
+                        "HOSPICE-HOME": 2,
+                        "OTHER FACILITY": 1,
+                        "ICF": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "insurance",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['Private', 'Medicare', 'Medicare', 'Medicare', 'Medicare']",
+                "statistics": {
+                    "unique_count": 5,
+                    "unique_ratio": 0.01,
+                    "categories": "['Medicare', 'Private', 'Medicaid', 'Government', 'Self Pay']",
+                    "gini_impurity": 0.6324,
+                    "unalikeability": 0.6337,
+                    "categorical_count": {
+                        "Medicare": 228,
+                        "Private": 189,
+                        "Medicaid": 63,
+                        "Government": 13,
+                        "Self Pay": 7
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "language",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['ENGL', 'SPAN', 'CANT', 'ENGL', 'ENGL']",
+                "statistics": {
+                    "unique_count": 13,
+                    "unique_ratio": 0.0455,
+                    "categories": "['ENGL', 'SPAN', 'RUSS', ... , 'HIND', 'HAIT', 'ALBA']",
+                    "gini_impurity": 0.2388,
+                    "unalikeability": 0.2397,
+                    "categorical_count": {
+                        "ENGL": 249,
+                        "SPAN": 14,
+                        "RUSS": 5,
+                        "PTUN": 4,
+                        "MAND": 2,
+                        "CANT": 2,
+                        "VIET": 2,
+                        "PORT": 2,
+                        "CAPE": 2,
+                        "GREE": 1,
+                        "HIND": 1,
+                        "HAIT": 1,
+                        "ALBA": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 214,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[ 39,  83,  85, 129, 147, ... , 5905, 5933, 5938, 5991, 5998]"
+                    }
+                }
+            },
+            {
+                "column_name": "religion",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['NOT SPECIFIED', 'JEWISH', 'PROTESTANT QUAKER', 'CATHOLIC', 'CATHOLIC']",
+                "statistics": {
+                    "unique_count": 14,
+                    "unique_ratio": 0.0282,
+                    "categories": "['CATHOLIC', 'NOT SPECIFIED', ... , 'BAPTIST', 'HINDU']",
+                    "gini_impurity": 0.781,
+                    "unalikeability": 0.7826,
+                    "categorical_count": {
+                        "CATHOLIC": 188,
+                        "NOT SPECIFIED": 88,
+                        "UNOBTAINABLE": 78,
+                        "PROTESTANT QUAKER": 52,
+                        "JEWISH": 40,
+                        "OTHER": 21,
+                        "EPISCOPALIAN": 11,
+                        "GREEK ORTHODOX": 4,
+                        "CHRISTIAN SCIENTIST": 4,
+                        "MUSLIM": 3,
+                        "JEHOVAH'S WITNESS": 3,
+                        "BUDDHIST": 2,
+                        "BAPTIST": 2,
+                        "HINDU": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 3,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[ 167, 1801, 3249]"
+                    }
+                }
+            },
+            {
+                "column_name": "marital_status",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['MARRIED', 'SINGLE', 'MARRIED', 'SINGLE', 'WIDOWED']",
+                "statistics": {
+                    "unique_count": 7,
+                    "unique_ratio": 0.0166,
+                    "categories": "['MARRIED', 'SINGLE', ... , 'UNKNOWN (DEFAULT)', 'LIFE PARTNER']",
+                    "gini_impurity": 0.6475,
+                    "unalikeability": 0.649,
+                    "categorical_count": {
+                        "MARRIED": 211,
+                        "SINGLE": 116,
+                        "WIDOWED": 66,
+                        "DIVORCED": 20,
+                        "SEPARATED": 6,
+                        "UNKNOWN (DEFAULT)": 2,
+                        "LIFE PARTNER": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 78,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[ 85, 147, 172, 201, 249, ... , 5828, 5860, 5894, 5905, 5991]"
+                    }
+                }
+            },
+            {
+                "column_name": "ethnicity",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['UNKNOWN/NOT SPECIFIED', 'BLACK/AFRICAN AMERICAN', 'WHITE',\n 'BLACK/AFRICAN AMERICAN', 'WHITE']",
+                "statistics": {
+                    "unique_count": 18,
+                    "unique_ratio": 0.036,
+                    "categories": "['WHITE', 'BLACK/AFRICAN AMERICAN', ... , 'HISPANIC/LATINO - GUATEMALAN', 'ASIAN - VIETNAMESE']",
+                    "gini_impurity": 0.4923,
+                    "unalikeability": 0.4933,
+                    "categorical_count": {
+                        "WHITE": 351,
+                        "BLACK/AFRICAN AMERICAN": 42,
+                        "UNKNOWN/NOT SPECIFIED": 33,
+                        "HISPANIC OR LATINO": 17,
+                        "OTHER": 17,
+                        "ASIAN": 15,
+                        "UNABLE TO OBTAIN": 6,
+                        "HISPANIC/LATINO - CUBAN": 3,
+                        "PATIENT DECLINED TO ANSWER": 3,
+                        "MULTI RACE ETHNICITY": 2,
+                        "WHITE - OTHER EUROPEAN": 2,
+                        "ASIAN - CHINESE": 2,
+                        "WHITE - RUSSIAN": 2,
+                        "WHITE - BRAZILIAN": 1,
+                        "ASIAN - ASIAN INDIAN": 1,
+                        "HISPANIC/LATINO - PUERTO RICAN": 1,
+                        "HISPANIC/LATINO - GUATEMALAN": 1,
+                        "ASIAN - VIETNAMESE": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "edregtime",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2160-06-18 17:58:00', '2144-05-04 05:59:00', '2119-06-15 15:33:00',\n '2158-05-03 04:25:00', '2144-01-28 19:54:00']",
+                "statistics": {
+                    "min": "2100-09-25 16:03:00",
+                    "max": "2204-08-08 21:06:00",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d %H:%M:%S']",
+                    "times": {
+                        "datetime": 0.011
+                    },
+                    "unique_count": 255,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 245,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[ 39,  85, 102, 147, 167, ... , 5905, 5914, 5933, 5938, 5991]"
+                    },
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "edouttime",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2145-08-26 20:45:00', '2102-10-12 00:18:00', '2113-01-22 16:41:00',\n '2103-07-11 21:28:00', '2118-02-16 00:57:00']",
+                "statistics": {
+                    "min": "2100-09-25 18:11:00",
+                    "max": "2204-08-09 10:05:00",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d %H:%M:%S']",
+                    "times": {
+                        "datetime": 0.012
+                    },
+                    "unique_count": 255,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 245,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[ 39,  85, 102, 147, 167, ... , 5905, 5914, 5933, 5938, 5991]"
+                    },
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "diagnosis",
+                "data_type": null,
+                "categorical": false,
+                "order": "random",
+                "samples": "['UPPER GI BLEED', 'GI BLEED', 'SUBARACHNOID HEMATOMA',\n 'T8 FRACTURE AND HEMOTHORAX', 'ALTERED MENTAL STATUS']",
+                "statistics": {
+                    "unique_count": 301,
+                    "unique_ratio": 0.6032,
+                    "sample_size": 500,
+                    "null_count": 1,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[5171]"
+                    }
+                }
+            },
+            {
+                "column_name": "hospital_expire_flag",
+                "data_type": "int",
+                "categorical": true,
+                "order": "random",
+                "samples": "['0', '0', '0', '0', '0']",
+                "statistics": {
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mode": "[0.0005]",
+                    "median": 0.0006,
+                    "sum": 58.0,
+                    "mean": 0.116,
+                    "variance": 0.1027,
+                    "stddev": 0.3205,
+                    "skewness": 2.4055,
+                    "kurtosis": 3.8018,
+                    "histogram": {
+                        "bin_edges": "[0. , 0.1, 0.2, 0.3, 0.4, ... , 0.6, 0.7, 0.8, 0.9, 1. ]",
+                        "bin_counts": "[442.,   0.,   0.,   0.,   0., ... ,  0.,  0.,  0.,  0., 58.]"
+                    },
+                    "quantiles": {
+                        "0": 0.0003,
+                        "1": 0.0006,
+                        "2": 0.0008
+                    },
+                    "median_abs_deviation": 0,
+                    "num_zeros": 442,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.0,
+                        "skewness": 0.001,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.001,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 2,
+                    "unique_ratio": 0.004,
+                    "categories": "['0', '1']",
+                    "gini_impurity": 0.2051,
+                    "unalikeability": 0.2055,
+                    "categorical_count": {
+                        "0": 442,
+                        "1": 58
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "has_chartevents_data",
+                "data_type": "int",
+                "categorical": true,
+                "order": "random",
+                "samples": "['1', '1', '1', '1', '1']",
+                "statistics": {
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mode": "[0.9995]",
+                    "median": 0.9995,
+                    "sum": 483.0,
+                    "mean": 0.966,
+                    "variance": 0.0329,
+                    "stddev": 0.1814,
+                    "skewness": -5.1581,
+                    "kurtosis": 24.7053,
+                    "histogram": {
+                        "bin_edges": "[0. , 0.1, 0.2, 0.3, 0.4, ... , 0.6, 0.7, 0.8, 0.9, 1. ]",
+                        "bin_counts": "[17.,  0.,  0.,  0.,  0., ... ,   0.,   0.,   0.,   0., 483.]"
+                    },
+                    "quantiles": {
+                        "0": 0.9992,
+                        "1": 0.9995,
+                        "2": 0.9997
+                    },
+                    "median_abs_deviation": 0.0003,
+                    "num_zeros": 17,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.001,
+                        "kurtosis": 0.0,
+                        "histogram_and_quantiles": 0.004,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 2,
+                    "unique_ratio": 0.004,
+                    "categories": "['1', '0']",
+                    "gini_impurity": 0.0657,
+                    "unalikeability": 0.0658,
+                    "categorical_count": {
+                        "1": 483,
+                        "0": 17
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "mimic_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['13594', '13280', '9586', '11650', '50575']",
+                "statistics": {
+                    "min": 42.0,
+                    "max": 58897.0,
+                    "mode": "[5721.5075]",
+                    "median": 30793.7375,
+                    "sum": 15651742.0,
+                    "mean": 31303.484,
+                    "variance": 289350374.6871,
+                    "stddev": 17010.302,
+                    "skewness": -0.0384,
+                    "kurtosis": -1.2632,
+                    "histogram": {
+                        "bin_edges": "[   42. ,  5927.5, 11813. , ... , 47126. , 53011.5, 58897. ]",
+                        "bin_counts": "[34., 45., 60., 48., 51., 43., 46., 51., 57., 65.]"
+                    },
+                    "quantiles": {
+                        "0": 16168.27,
+                        "1": 30793.7375,
+                        "2": 46655.16
+                    },
+                    "median_abs_deviation": 15066.88,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.001,
+                        "variance": 0.0,
+                        "skewness": 0.001,
+                        "kurtosis": 0.0,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            }
+        ],
+        "mimic_patients_test.csv": [
+            {
+                "column_name": "row_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['13255', '39632', '35221', '36339', '21878']",
+                "statistics": {
+                    "min": 57.0,
+                    "max": 46421.0,
+                    "mode": "[ 2583.838,  9028.434,  9260.254,  9538.438, 10280.262]",
+                    "median": 23378.092,
+                    "sum": 11561405.0,
+                    "mean": 23122.81,
+                    "variance": 179425584.6913,
+                    "stddev": 13394.9836,
+                    "skewness": 0.0092,
+                    "kurtosis": -1.227,
+                    "histogram": {
+                        "bin_edges": "[  57. , 4693.4, 9329.8, ... , 37148.2, 41784.6, 46421. ]",
+                        "bin_counts": "[47., 57., 54., 50., 40., 52., 53., 50., 51., 46.]"
+                    },
+                    "quantiles": {
+                        "0": 11555.272,
+                        "1": 23378.092,
+                        "2": 35108.184
+                    },
+                    "median_abs_deviation": 11753.274,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.001,
+                        "variance": 0.0,
+                        "skewness": 0.006,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.001,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "subject_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['20123', '25597', '25036', '65444', '11480']",
+                "statistics": {
+                    "min": 64.0,
+                    "max": 99613.0,
+                    "mode": "[14050.6345]",
+                    "median": 24801.9265,
+                    "sum": 17049515.0,
+                    "mean": 34099.03,
+                    "variance": 786302014.947,
+                    "stddev": 28041.0773,
+                    "skewness": 0.8301,
+                    "kurtosis": -0.5549,
+                    "histogram": {
+                        "bin_edges": "[   64. , 10018.9, 19973.8, ... , 79703.2, 89658.1, 99613. ]",
+                        "bin_counts": "[105., 105.,  91.,  29.,  31., ... , 29., 30., 28., 23., 29.]"
+                    },
+                    "quantiles": {
+                        "0": 12208.978,
+                        "1": 24801.9265,
+                        "2": 56309.185
+                    },
+                    "median_abs_deviation": 16624.683,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.001,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.002,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "gender",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['M', 'F', 'M', 'F', 'M']",
+                "statistics": {
+                    "unique_count": 2,
+                    "unique_ratio": 0.004,
+                    "categories": "['M', 'F']",
+                    "gini_impurity": 0.4974,
+                    "unalikeability": 0.4984,
+                    "categorical_count": {
+                        "M": 268,
+                        "F": 232
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "dob",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['1802-12-21', '2048-10-19', '2140-09-15', '2104-07-04', '2039-09-13']",
+                "statistics": {
+                    "min": "1801-02-10",
+                    "max": "2201-05-15",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d']",
+                    "times": {
+                        "datetime": 0.1
+                    },
+                    "unique_count": 499,
+                    "unique_ratio": 0.998,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "dod",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2187-06-24', '2140-03-25', '2137-05-28', '2122-04-15', '2109-08-30']",
+                "statistics": {
+                    "min": "2100-11-03",
+                    "max": "2203-01-13",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d']",
+                    "times": {
+                        "datetime": 0.053
+                    },
+                    "unique_count": 168,
+                    "unique_ratio": 0.9941,
+                    "sample_size": 500,
+                    "null_count": 331,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[29, 33, 45, 68, 75, ... , 5938, 5941, 5943, 5956, 5970]"
+                    },
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "dod_hosp",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2144-12-04', '2160-03-07', '2196-02-14', '2188-06-18', '2109-08-30']",
+                "statistics": {
+                    "min": "2100-11-03",
+                    "max": "2200-08-07",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d']",
+                    "times": {
+                        "datetime": 0.044
+                    },
+                    "unique_count": 113,
+                    "unique_ratio": 0.9912,
+                    "sample_size": 500,
+                    "null_count": 386,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[29, 33, 45, 68, 75, ... , 5938, 5941, 5943, 5956, 5970]"
+                    },
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "dod_ssn",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2143-05-21', '2157-04-14', '2196-02-14', '2140-03-25', '2116-09-06']",
+                "statistics": {
+                    "min": "2100-11-03",
+                    "max": "2203-01-13",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d']",
+                    "times": {
+                        "datetime": 0.049
+                    },
+                    "unique_count": 141,
+                    "unique_ratio": 0.993,
+                    "sample_size": 500,
+                    "null_count": 358,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[29, 33, 45, 68, 75, ... , 5938, 5941, 5943, 5956, 5970]"
+                    },
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "expire_flag",
+                "data_type": "int",
+                "categorical": true,
+                "order": "random",
+                "samples": "['1', '0', '0', '0', '0']",
+                "statistics": {
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mode": "[0.0005]",
+                    "median": 0.0008,
+                    "sum": 169.0,
+                    "mean": 0.338,
+                    "variance": 0.2242,
+                    "stddev": 0.4735,
+                    "skewness": 0.687,
+                    "kurtosis": -1.5342,
+                    "histogram": {
+                        "bin_edges": "[0. , 0.1, 0.2, 0.3, 0.4, ... , 0.6, 0.7, 0.8, 0.9, 1. ]",
+                        "bin_counts": "[331.,   0.,   0.,   0., ... ,   0.,   0.,   0., 169.]"
+                    },
+                    "quantiles": {
+                        "0": 0.0004,
+                        "1": 0.0008,
+                        "2": 0.9993
+                    },
+                    "median_abs_deviation": 0,
+                    "num_zeros": 331,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.0,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.002,
+                        "num_zeros": 0.001,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 2,
+                    "unique_ratio": 0.004,
+                    "categories": "['0', '1']",
+                    "gini_impurity": 0.4475,
+                    "unalikeability": 0.4484,
+                    "categorical_count": {
+                        "0": 331,
+                        "1": 169
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "mimic_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['392786162', '392791674', '392803562', '392780210', '392788232']",
+                "statistics": {
+                    "min": 392775986.0,
+                    "max": 392822361.0,
+                    "mode": "[3.92788113e+08]",
+                    "median": 392799127.125,
+                    "sum": 196399469248.0,
+                    "mean": 392798938.496,
+                    "variance": 179736066.495,
+                    "stddev": 13406.568,
+                    "skewness": 0.0291,
+                    "kurtosis": -1.2089,
+                    "histogram": {
+                        "bin_edges": "[3.92775986e+08, 3.92780624e+08, ... , 3.92817724e+08, 3.92822361e+08]",
+                        "bin_counts": "[52., 49., 58., 47., 44., 52., 52., 53., 39., 54.]"
+                    },
+                    "quantiles": {
+                        "0": 392786930.5,
+                        "1": 392799127.125,
+                        "2": 392810164.375
+                    },
+                    "median_abs_deviation": 11524.1875,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.005,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "universal_id",
+                "data_type": null,
+                "categorical": false,
+                "order": "random",
+                "samples": "['67bcf73c214fa1aa50c34007c28d0eb1', 'cf13d4a912e414ed750beace5bcf3a13',\n '59118e1f66f5a8b247078e9ce260effa', '054334951246064a00b9f5ed7d776200',\n '977b26870ecca0f86474f60391d6a423']",
+                "statistics": {
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            }
+        ],
+        "mimic_icustays_test.csv": [
+            {
+                "column_name": "row_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['36126', '8216', '52160', '40075', '44479']",
+                "statistics": {
+                    "min": 209.0,
+                    "max": 61524.0,
+                    "mode": "[ 7904.0325, 15384.4625]",
+                    "median": 31448.9925,
+                    "sum": 15715790.0,
+                    "mean": 31431.58,
+                    "variance": 301634394.713,
+                    "stddev": 17367.6249,
+                    "skewness": 0.0507,
+                    "kurtosis": -1.1943,
+                    "histogram": {
+                        "bin_edges": "[  209. ,  6340.5, 12472. , ... , 49261. , 55392.5, 61524. ]",
+                        "bin_counts": "[35., 54., 54., 57., 45., 55., 51., 41., 57., 51.]"
+                    },
+                    "quantiles": {
+                        "0": 16150.9,
+                        "1": 31448.9925,
+                        "2": 46440.51
+                    },
+                    "median_abs_deviation": 15236.7775,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.006,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "subject_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['54877', '9144', '45367', '18982', '4954']",
+                "statistics": {
+                    "min": 151.0,
+                    "max": 99982.0,
+                    "mode": "[ 6190.7755, 12080.8045, 24260.1865]",
+                    "median": 24859.1725,
+                    "sum": 17333927.0,
+                    "mean": 34667.854,
+                    "variance": 802967980.2211,
+                    "stddev": 28336.6896,
+                    "skewness": 0.8985,
+                    "kurtosis": -0.4743,
+                    "histogram": {
+                        "bin_edges": "[  151. , 10134.1, 20117.2, ... , 80015.8, 89998.9, 99982. ]",
+                        "bin_counts": "[ 92., 115., 102.,  28.,  28., ... , 20., 31., 27., 23., 34.]"
+                    },
+                    "quantiles": {
+                        "0": 12679.7905,
+                        "1": 24859.1725,
+                        "2": 54958.219
+                    },
+                    "median_abs_deviation": 15190.9505,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.001,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.001,
+                        "kurtosis": 0.002,
+                        "histogram_and_quantiles": 0.004,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 499,
+                    "unique_ratio": 0.998,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "hadm_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['182696', '106405', '187089', '181587', '176171']",
+                "statistics": {
+                    "min": 100191.0,
+                    "max": 199963.0,
+                    "mode": "[163895.422]",
+                    "median": 150126.886,
+                    "sum": 74994701.0,
+                    "mean": 149989.402,
+                    "variance": 808228818.5735,
+                    "stddev": 28429.3654,
+                    "skewness": -0.0139,
+                    "kurtosis": -1.164,
+                    "histogram": {
+                        "bin_edges": "[100191. , 110168.2, 120145.4, ... , 180008.6, 189985.8, 199963. ]",
+                        "bin_counts": "[47., 48., 52., 58., 45., 49., 63., 41., 50., 47.]"
+                    },
+                    "quantiles": {
+                        "0": 125832.404,
+                        "1": 150126.886,
+                        "2": 172425.928
+                    },
+                    "median_abs_deviation": 23795.622,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.0,
+                        "skewness": 0.006,
+                        "kurtosis": 0.002,
+                        "histogram_and_quantiles": 0.0045,
+                        "num_zeros": 0.0005,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.906,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "icustay_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['233556', '253275', '255409', '224219', '264229']",
+                "statistics": {
+                    "min": 200030.0,
+                    "max": 299203.0,
+                    "mode": "[249269.3945]",
+                    "median": 250856.1625,
+                    "sum": 125118005.0,
+                    "mean": 250236.01,
+                    "variance": 778460369.9258,
+                    "stddev": 27900.9027,
+                    "skewness": -0.0578,
+                    "kurtosis": -1.1129,
+                    "histogram": {
+                        "bin_edges": "[200030. , 209947.3, 219864.6, ... , 279368.4, 289285.7, 299203. ]",
+                        "bin_counts": "[48., 46., 45., 46., 58., 56., 54., 57., 44., 46.]"
+                    },
+                    "quantiles": {
+                        "0": 227500.921,
+                        "1": 250856.1625,
+                        "2": 272872.5685
+                    },
+                    "median_abs_deviation": 22760.2035,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.001,
+                        "kurtosis": 0.0,
+                        "histogram_and_quantiles": 0.002,
+                        "num_zeros": 0.001,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.902,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "dbsource",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['metavision', 'carevue', 'metavision', 'carevue', 'carevue']",
+                "statistics": {
+                    "unique_count": 2,
+                    "unique_ratio": 0.004,
+                    "categories": "['carevue', 'metavision']",
+                    "gini_impurity": 0.4692,
+                    "unalikeability": 0.4702,
+                    "categorical_count": {
+                        "carevue": 312,
+                        "metavision": 188
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "first_careunit",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['SICU', 'TSICU', 'MICU', 'CSRU', 'MICU']",
+                "statistics": {
+                    "unique_count": 6,
+                    "unique_ratio": 0.012,
+                    "categories": "['MICU', 'CSRU', 'NICU', 'SICU', 'CCU', 'TSICU']",
+                    "gini_impurity": 0.7921,
+                    "unalikeability": 0.7937,
+                    "categorical_count": {
+                        "MICU": 174,
+                        "CSRU": 79,
+                        "NICU": 69,
+                        "SICU": 69,
+                        "CCU": 55,
+                        "TSICU": 54
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "last_careunit",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['TSICU', 'MICU', 'MICU', 'MICU', 'MICU']",
+                "statistics": {
+                    "unique_count": 6,
+                    "unique_ratio": 0.012,
+                    "categories": "['MICU', 'CSRU', 'SICU', 'NICU', 'TSICU', 'CCU']",
+                    "gini_impurity": 0.7898,
+                    "unalikeability": 0.7914,
+                    "categorical_count": {
+                        "MICU": 176,
+                        "CSRU": 80,
+                        "SICU": 70,
+                        "NICU": 69,
+                        "TSICU": 54,
+                        "CCU": 51
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "first_wardid",
+                "data_type": "int",
+                "categorical": true,
+                "order": "random",
+                "samples": "['12', '14', '23', '14', '7']",
+                "statistics": {
+                    "min": 7.0,
+                    "max": 57.0,
+                    "mode": "[23.025]",
+                    "median": 26.0143,
+                    "sum": 16275.0,
+                    "mean": 32.55,
+                    "variance": 350.1077,
+                    "stddev": 18.7112,
+                    "skewness": 0.1338,
+                    "kurtosis": -1.6873,
+                    "histogram": {
+                        "bin_edges": "[ 7., 12., 17., 22., 27., ... , 37., 42., 47., 52., 57.]",
+                        "bin_counts": "[ 36., 145.,   0.,  74., ... ,   1.,   0.,  38., 163.]"
+                    },
+                    "quantiles": {
+                        "0": 14.04,
+                        "1": 26.0143,
+                        "2": 52.0333
+                    },
+                    "median_abs_deviation": 13.9967,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.001,
+                        "variance": 0.0,
+                        "skewness": 0.001,
+                        "kurtosis": 0.0,
+                        "histogram_and_quantiles": 0.0042,
+                        "num_zeros": 0.0008,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 14,
+                    "unique_ratio": 0.028,
+                    "categories": "['23', '14', '56', '52', ... , '26', '38', '16', '22']",
+                    "gini_impurity": 0.8985,
+                    "unalikeability": 0.9003,
+                    "categorical_count": {
+                        "23": 66,
+                        "14": 65,
+                        "56": 62,
+                        "52": 57,
+                        "57": 44,
+                        "33": 43,
+                        "15": 42,
+                        "50": 38,
+                        "12": 37,
+                        "7": 36,
+                        "26": 7,
+                        "38": 1,
+                        "16": 1,
+                        "22": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "last_wardid",
+                "data_type": "int",
+                "categorical": true,
+                "order": "random",
+                "samples": "['52', '33', '14', '52', '12']",
+                "statistics": {
+                    "min": 7.0,
+                    "max": 57.0,
+                    "mode": "[14.025]",
+                    "median": 23.0485,
+                    "sum": 16091.0,
+                    "mean": 32.182,
+                    "variance": 345.7363,
+                    "stddev": 18.594,
+                    "skewness": 0.17,
+                    "kurtosis": -1.6722,
+                    "histogram": {
+                        "bin_edges": "[ 7., 12., 17., 22., 27., ... , 37., 42., 47., 52., 57.]",
+                        "bin_counts": "[ 35., 150.,   0.,  74., ... ,   1.,   0.,  38., 158.]"
+                    },
+                    "quantiles": {
+                        "0": 14.0387,
+                        "1": 23.0485,
+                        "2": 52.0289
+                    },
+                    "median_abs_deviation": 11.0228,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.001,
+                        "sum": 0.0,
+                        "variance": 0.0,
+                        "skewness": 0.002,
+                        "kurtosis": 0.0,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 14,
+                    "unique_ratio": 0.028,
+                    "categories": "['14', '23', '56', '52', ... , '26', '22', '16', '38']",
+                    "gini_impurity": 0.897,
+                    "unalikeability": 0.8988,
+                    "categorical_count": {
+                        "14": 71,
+                        "23": 66,
+                        "56": 62,
+                        "52": 57,
+                        "33": 44,
+                        "15": 43,
+                        "57": 39,
+                        "50": 38,
+                        "12": 35,
+                        "7": 35,
+                        "26": 7,
+                        "22": 1,
+                        "16": 1,
+                        "38": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "intime",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2103-02-22 17:17:09', '2138-11-03 17:12:23', '2144-12-03 05:32:01',\n '2187-10-29 23:20:28', '2159-02-02 13:25:14']",
+                "statistics": {
+                    "min": "2100-08-31 16:44:17",
+                    "max": "2204-01-03 19:53:12",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d %H:%M:%S']",
+                    "times": {
+                        "datetime": 0.018
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "outtime",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2198-09-04 18:01:57', '2123-04-08 21:20:52', '2129-12-02 01:33:35',\n '2186-01-31 02:10:26', '2187-09-19 15:49:35']",
+                "statistics": {
+                    "min": "2100-09-03 15:43:56",
+                    "max": "2204-01-06 16:41:04",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d %H:%M:%S']",
+                    "times": {
+                        "datetime": 0.02
+                    },
+                    "unique_count": 499,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 1,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[527]"
+                    },
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "los",
+                "data_type": "float",
+                "categorical": false,
+                "order": "random",
+                "samples": "['1.7917', '6.9826', '1.1008', '17.7702', '0.8575']",
+                "statistics": {
+                    "min": 0.0209,
+                    "max": 112.0008,
+                    "mode": "[1.08470905, 1.19668895]",
+                    "median": 2.0405,
+                    "sum": 2473.054,
+                    "mean": 4.956,
+                    "variance": 101.8247,
+                    "stddev": 10.0908,
+                    "skewness": 5.9556,
+                    "kurtosis": 47.24,
+                    "histogram": {
+                        "bin_edges": "[0.0209    , 0.76248874, ... , 111.25921126, 112.0008    ]",
+                        "bin_counts": "[ 67., 122.,  84.,  49.,  39., ... , 0., 0., 0., 0., 1.]"
+                    },
+                    "quantiles": {
+                        "0": 1.0857,
+                        "1": 2.0405,
+                        "2": 4.0592
+                    },
+                    "median_abs_deviation": 1.157,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "precision": 0.003,
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.0,
+                        "skewness": 0.001,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.002,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.001
+                    },
+                    "precision": {
+                        "min": 2,
+                        "max": 17,
+                        "mean": 5.2645,
+                        "var": 5.6126,
+                        "std": 2.3691,
+                        "sample_size": 499,
+                        "margin_of_error": 0.349,
+                        "confidence_level": 0.999
+                    },
+                    "unique_count": 497,
+                    "unique_ratio": 0.996,
+                    "sample_size": 500,
+                    "null_count": 1,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[527]"
+                    },
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 0.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "mimic_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['336703235', '336653367', '336682896', '336698888', '336660054']",
+                "statistics": {
+                    "min": 336649462.0,
+                    "max": 336710703.0,
+                    "mode": "[3.36659046e+08, 3.36662414e+08, 3.36666518e+08]",
+                    "median": 336680725.5305,
+                    "sum": 168340472705.0,
+                    "mean": 336680945.41,
+                    "variance": 304099428.066,
+                    "stddev": 17438.4468,
+                    "skewness": 0.0317,
+                    "kurtosis": -1.1856,
+                    "histogram": {
+                        "bin_edges": "[3.36649462e+08, 3.36655586e+08, ... , 3.36704579e+08, 3.36710703e+08]",
+                        "bin_counts": "[34., 57., 51., 48., 52., 54., 54., 45., 46., 59.]"
+                    },
+                    "quantiles": {
+                        "0": 336665905.2085,
+                        "1": 336680725.5305,
+                        "2": 336696372.606
+                    },
+                    "median_abs_deviation": 15371.491,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.0,
+                        "skewness": 0.001,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.002,
+                        "num_zeros": 0.001,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            }
+        ],
+        "mimic_services_test.csv": [
+            {
+                "column_name": "row_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['67611', '55632', '5369', '12802', '49638']",
+                "statistics": {
+                    "min": 47.0,
+                    "max": 73147.0,
+                    "mode": "[21282.55]",
+                    "median": 40288.55,
+                    "sum": 19076750.0,
+                    "mean": 38153.5,
+                    "variance": 441992565.5731,
+                    "stddev": 21023.6192,
+                    "skewness": -0.1328,
+                    "kurtosis": -1.1639,
+                    "histogram": {
+                        "bin_edges": "[   47.,  7357., 14667., ... , 58527., 65837., 73147.]",
+                        "bin_counts": "[49., 41., 54., 36., 41., 64., 56., 56., 48., 55.]"
+                    },
+                    "quantiles": {
+                        "0": 19528.15,
+                        "1": 40288.55,
+                        "2": 55858.85
+                    },
+                    "median_abs_deviation": 17946.05,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.001,
+                        "variance": 0.0,
+                        "skewness": 0.007,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.003,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "subject_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['13007', '19136', '14071', '66320', '46961']",
+                "statistics": {
+                    "min": 41.0,
+                    "max": 99469.0,
+                    "mode": "[13016.354]",
+                    "median": 27035.702,
+                    "sum": 17954540.0,
+                    "mean": 35909.08,
+                    "variance": 798983905.0076,
+                    "stddev": 28266.3033,
+                    "skewness": 0.7309,
+                    "kurtosis": -0.7161,
+                    "histogram": {
+                        "bin_edges": "[   41. ,  9983.8, 19926.6, ... , 79583.4, 89526.2, 99469. ]",
+                        "bin_counts": "[ 91.,  91., 106.,  31.,  31., ... , 34., 30., 24., 36., 26.]"
+                    },
+                    "quantiles": {
+                        "0": 13051.864,
+                        "1": 27035.702,
+                        "2": 57410.956
+                    },
+                    "median_abs_deviation": 17847.326,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.001,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.0,
+                        "skewness": 0.001,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.002,
+                        "num_zeros": 0.001,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 498,
+                    "unique_ratio": 0.996,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "hadm_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['186413', '105964', '137454', '100747', '101272']",
+                "statistics": {
+                    "min": 100091.0,
+                    "max": 199912.0,
+                    "mode": "[156240.3125]",
+                    "median": 145060.3605,
+                    "sum": 73431894.0,
+                    "mean": 146863.788,
+                    "variance": 857814973.5942,
+                    "stddev": 29288.4785,
+                    "skewness": 0.1293,
+                    "kurtosis": -1.1417,
+                    "histogram": {
+                        "bin_edges": "[100091. , 110073.1, 120055.2, ... , 179947.8, 189929.9, 199912. ]",
+                        "bin_counts": "[66., 46., 54., 55., 53., 53., 47., 30., 50., 46.]"
+                    },
+                    "quantiles": {
+                        "0": 122251.262,
+                        "1": 145060.3605,
+                        "2": 170065.521
+                    },
+                    "median_abs_deviation": 23807.3085,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.0,
+                        "sum": 0.0,
+                        "variance": 0.001,
+                        "skewness": 0.006,
+                        "kurtosis": 0.002,
+                        "histogram_and_quantiles": 0.005,
+                        "num_zeros": 0.0,
+                        "num_negatives": 0.001
+                    },
+                    "unique_count": 499,
+                    "unique_ratio": 0.998,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.868,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            },
+            {
+                "column_name": "transfertime",
+                "data_type": "datetime",
+                "categorical": false,
+                "order": "random",
+                "samples": "['2160-01-10 00:49:00', '2119-12-13 17:32:03', '2128-04-04 04:19:40',\n '2112-07-15 14:06:47', '2114-12-26 15:39:21']",
+                "statistics": {
+                    "min": "2100-08-27 11:38:10",
+                    "max": "2205-08-07 15:52:47",
+                    "histogram": null,
+                    "format": "['%Y-%m-%d %H:%M:%S']",
+                    "times": {
+                        "datetime": 0.018
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 1.0,
+                        "int": 0.0,
+                        "float": 0.0
+                    }
+                }
+            },
+            {
+                "column_name": "prev_service",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['MED', 'SURG', 'CMED', 'NSURG', 'MED']",
+                "statistics": {
+                    "unique_count": 15,
+                    "unique_ratio": 0.1515,
+                    "categories": "['MED', 'CMED', 'OMED', ... , 'CSURG', 'NMED', 'ENT']",
+                    "gini_impurity": 0.816,
+                    "unalikeability": 0.8244,
+                    "categorical_count": {
+                        "MED": 31,
+                        "CMED": 23,
+                        "OMED": 14,
+                        "NSURG": 6,
+                        "SURG": 5,
+                        "ORTHO": 5,
+                        "TRAUM": 3,
+                        "GYN": 3,
+                        "GU": 2,
+                        "OBS": 2,
+                        "TSURG": 1,
+                        "VSURG": 1,
+                        "CSURG": 1,
+                        "NMED": 1,
+                        "ENT": 1
+                    },
+                    "sample_size": 500,
+                    "null_count": 401,
+                    "null_types": "['nan']",
+                    "null_types_index": {
+                        "nan": "[ 30,  33,  58,  95, 112, ... , 5897, 5921, 5931, 5963, 5978]"
+                    }
+                }
+            },
+            {
+                "column_name": "curr_service",
+                "data_type": null,
+                "categorical": true,
+                "order": "random",
+                "samples": "['MED', 'MED', 'NB', 'NB', 'MED']",
+                "statistics": {
+                    "unique_count": 15,
+                    "unique_ratio": 0.03,
+                    "categories": "['MED', 'CMED', 'CSURG', ... , 'GYN', 'OBS', 'ENT']",
+                    "gini_impurity": 0.8312,
+                    "unalikeability": 0.8329,
+                    "categorical_count": {
+                        "MED": 172,
+                        "CMED": 58,
+                        "CSURG": 51,
+                        "NB": 45,
+                        "SURG": 44,
+                        "NSURG": 33,
+                        "TRAUM": 25,
+                        "NMED": 22,
+                        "VSURG": 12,
+                        "OMED": 12,
+                        "TSURG": 11,
+                        "ORTHO": 7,
+                        "GYN": 4,
+                        "OBS": 2,
+                        "ENT": 2
+                    },
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {}
+                }
+            },
+            {
+                "column_name": "mimic_id",
+                "data_type": "int",
+                "categorical": false,
+                "order": "random",
+                "samples": "['397534009', '397484136', '397505290', '397515799', '397541268']",
+                "statistics": {
+                    "min": 397477101.0,
+                    "max": 397549927.0,
+                    "mode": "[3.97489445e+08, 3.97506632e+08, 3.97508744e+08, 3.97515735e+08,\n 3.97521780e+08]",
+                    "median": 397516135.736,
+                    "sum": 198757531615.0,
+                    "mean": 397515063.23,
+                    "variance": 426121053.7165,
+                    "stddev": 20642.6998,
+                    "skewness": -0.1616,
+                    "kurtosis": -1.1317,
+                    "histogram": {
+                        "bin_edges": "[3.97477101e+08, 3.97484384e+08, ... , 3.97542644e+08, 3.97549927e+08]",
+                        "bin_counts": "[48., 44., 44., 38., 56., 46., 57., 72., 51., 44.]"
+                    },
+                    "quantiles": {
+                        "0": 397497273.802,
+                        "1": 397516135.736,
+                        "2": 397532157.456
+                    },
+                    "median_abs_deviation": 17186.936,
+                    "num_zeros": 0,
+                    "num_negatives": 0,
+                    "times": {
+                        "min": 0.0,
+                        "max": 0.001,
+                        "sum": 0.0,
+                        "variance": 0.0,
+                        "skewness": 0.001,
+                        "kurtosis": 0.001,
+                        "histogram_and_quantiles": 0.002,
+                        "num_zeros": 0.001,
+                        "num_negatives": 0.0
+                    },
+                    "unique_count": 500,
+                    "unique_ratio": 1.0,
+                    "sample_size": 500,
+                    "null_count": 0,
+                    "null_types": "[]",
+                    "null_types_index": {},
+                    "data_type_representation": {
+                        "datetime": 0.0,
+                        "int": 1.0,
+                        "float": 1.0
+                    }
+                }
+            }
+        ]
+    },
+    "generated_SQL": null,
+    "phi_result": {
+        "mimic_admissions_test.csv.row_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0019623039,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.subject_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.hadm_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.admittime": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.dischtime": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.deathtime": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.admission_type": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.admission_location": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.discharge_location": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.insurance": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.language": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.religion": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.marital_status": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.ethnicity": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_admissions_test.csv.edregtime": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.edouttime": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.diagnosis": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.hospital_expire_flag": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0018465996,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.has_chartevents_data": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.002401683,
+            "predict_result": 0.0
+        },
+        "mimic_admissions_test.csv.mimic_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_patients_test.csv.row_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0019623039,
+            "predict_result": 0.0
+        },
+        "mimic_patients_test.csv.subject_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_patients_test.csv.gender": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_patients_test.csv.dob": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_patients_test.csv.dod": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_patients_test.csv.dod_hosp": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_patients_test.csv.dod_ssn": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_patients_test.csv.expire_flag": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.002401683,
+            "predict_result": 0.0
+        },
+        "mimic_patients_test.csv.mimic_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_patients_test.csv.universal_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.row_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0019623039,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.subject_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_icustays_test.csv.hadm_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_icustays_test.csv.icustay_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0019623039,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.dbsource": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.first_careunit": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.last_careunit": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.first_wardid": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0023565332,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.last_wardid": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0023565332,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.intime": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.outtime": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_icustays_test.csv.los": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0030890813,
+            "predict_result": 0.0
+        },
+        "mimic_icustays_test.csv.mimic_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_services_test.csv.row_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0019623039,
+            "predict_result": 0.0
+        },
+        "mimic_services_test.csv.subject_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_services_test.csv.hadm_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        },
+        "mimic_services_test.csv.transfertime": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_services_test.csv.prev_service": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_services_test.csv.curr_service": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.0012342234,
+            "predict_result": 0.0
+        },
+        "mimic_services_test.csv.mimic_id": {
+            "method": "0",
+            "offset": "",
+            "predict_probability": 0.96540236,
+            "predict_result": 1.0
+        }
+    },
+    "universal_id": {},
+    "text_folder": "C:/source/python/PyQt6/data_tools/data_folder/mimic"
+}

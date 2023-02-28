@@ -1,0 +1,1 @@
+python3.8 "Analysis 22-11-02.py" --original_data_path ../data_profile/table_admissions_sample.csv --json_file_path ../data_profile/table_admissions_profile.json  --model_path  XGBClassifier.json

@@ -1,0 +1,20 @@
+,HIPPA,ML prediction result,ML prediction result 0/1
+ims_patient_id,0,0.0019623039,0
+gender,1,0.96540236,1
+year_of_birth,0,0.0019623039,0
+patient_state_code,0,0.0012342234,0
+emr_client_key,0,0.0019623039,0
+client_state_code,0,0.0012342234,0
+tumor_type,0,0.0012342234,0
+tumor_sub_type,0,0.0012342234,0
+metastatic_date,0,0.0012342234,0
+her2,0,0.0012342234,0
+er,0,0.0012342234,0
+pr,0,0.0012342234,0
+kras,0,0.0012342234,0
+braf,0,0.0012342234,0
+c_met,0,0.0012342234,0
+egfr,0,0.0012342234,0
+eml4_alk,0,0.0012342234,0
+death_indicator,0,0.0018465996,0
+race,0,0.0012342234,0

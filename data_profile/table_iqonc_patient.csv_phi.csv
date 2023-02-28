@@ -1,0 +1,10 @@
+,HIPPA,ML prediction result,ML prediction result 0/1
+ims_patient_id,0,0.0019623039,0
+year_of_birth,0,0.0019623039,0
+gender,1,0.96540236,1
+patient_state_code,0,0.0012342234,0
+emr_client_key,0,0.0019623039,0
+client_state_code,0,0.0012342234,0
+client_zip3,0,0.0023565332,0
+race,0,0.0012342234,0
+patient_id_synth,0,0.0015086175,0
