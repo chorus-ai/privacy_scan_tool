@@ -21,10 +21,60 @@ Where mimic is the database name and mimiciii is the data schema name
 Please don’t change the 'LOCAL_TEXT_FILES': 'LOCAL_TEXT_FILES' session
  
 
-## Running the tools
+## Running the tool from Mac OS :
 
-### Start up the tools
+### 1. go to the selected folder
+~~~
+cd ~/my_folder
+$
+~~~
 
+### 2. Active the virtual environment
+~~~
+source ChoRUS_env/bin/activate
+(ChoRUS_env) $
+ 
+~~~
+
+### 3. enter folder of the package cloned from Github.com 
+~~~
+cd ChoRUS_Privacy_Scan
+~~~
+
+### 4. run the python privacy Scan Tool
+~~~
+python main.py
+~~~
+ 
+
+## Running the tool from Windows :
+
+### 1. go to the selected folder
+~~~
+cd c:\my_folder
+c:\my_folder>
+$
+~~~
+
+### 2. Active the virtual environment
+~~~
+ChoRUS_env\Scripts\activate.bat
+(ChoRUS_env) c:\my_folder>
+~~~
+
+### 3. enter folder of the package cloned from Github.com 
+~~~
+cd ChoRUS_Privacy_Scan
+~~~
+
+### 4. run the python privacy Scan Tool
+~~~
+python main.py
+~~~
+ 
+ 
+ 
+ 
 
 
 
