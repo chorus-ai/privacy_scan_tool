@@ -75,10 +75,23 @@ python main.py
 ~~~
  
 ## Step 1 decide the source data type 
-User can select the source data type from the dropdown list. The "LOCAL_TEXT_FILE" is for local csv files.
+User can select the source data type from the dropdown list. 
+
+![Model](screen_capture/select_source_db.JPG?raw=true)
+
+The "LOCAL_TEXT_FILE" is for local csv files. If it is selected, user can  choose the folder where the csv files located.
+
+![Model](screen_capture/csv_files.JPG?raw=true)
 
 ## Step 2 select the source tables to scan 
 
+User can select the tables(csv files) from the soruce data base to scan.
+![Model](screen_capture/select_table.JPG?raw=true)
+
+The selected tables will be displayed in the "Selected Source Tables" table
+![Model](screen_capture/selected_tables.JPG?raw=true)
+
+select_table.JPG
 
 ## Step 3 run data profiling 
 
@@ -89,7 +102,7 @@ User can select the source data type from the dropdown list. The "LOCAL_TEXT_FIL
 
 ## Step 6 save/load the project
 
-![Model](screen_capture/select_source_db.JPG?raw=true)
+
 
 ![Model](screen_capture/Profiling.JPG?raw=true)
 
