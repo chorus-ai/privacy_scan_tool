@@ -77,7 +77,7 @@ python main.py
 ## Step 1 decide the source data type 
 User can select the source data type from the dropdown list. 
 
-![Model](screen_capture/select_source_db.JPG?raw=true height="200")
+![select_source_db](screen_capture/select_source_db.JPG?raw=true)
 
 The "LOCAL_TEXT_FILE" is for local csv files. If it is selected, user can  choose the folder where the csv files located.
 
