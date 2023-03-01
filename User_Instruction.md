@@ -25,7 +25,7 @@ Please don’t change the 'LOCAL_TEXT_FILES': 'LOCAL_TEXT_FILES' session
 
 ## Running the tool from Mac OS :
 
-### 1. go to the selected folder
+### 1. Open a terminal and go to the selected folder
 ~~~
 cd ~/my_folder
 $
@@ -51,7 +51,7 @@ python main.py
 
 ## Running the tool from Windows :
 
-### 1. go to the selected folder
+### 1. Open a commnad prompt and go to the selected folder
 ~~~
 cd c:\my_folder
 c:\my_folder>
@@ -73,8 +73,10 @@ cd ChoRUS_Privacy_Scan
 ~~~
 python main.py
 ~~~
+The main screen is like this.
+![main](screen_capture/main.JPG?raw=true)
  
-## Step 1 decide the source data type 
+## Step 1. Decide the source data type 
 User can select the source data type from the dropdown list. To add a new data source, please refer to the "Source data and configuration" session of this document.
 
 ![select_source_db](screen_capture/select_source_db.JPG?raw=true)
@@ -83,7 +85,7 @@ For local csv files, please select the "LOCAL_TEXT_FILE" option . If it is selec
 
 ![Model](screen_capture/csv_files.JPG?raw=true)
 
-## Step 2 select the source tables to scan 
+## Step 2. Select the source tables to scan 
 
 The next step is to select the tables(csv files) from the soruce data base to scan.
 
@@ -93,7 +95,7 @@ The selected tables will be displayed in the "Selected Source Tables" form.
 
 ![selected_tables](screen_capture/selected_tables.JPG?raw=true)
 
-## Step 3 run data profiling 
+## Step 3. Run data profiling 
 By clicking the "Genereate DB profile", the data profiling tool will run at the backend to genereate the statistics of the tables.
 
 ![Profiling](screen_capture/Profiling.JPG?raw=true)
@@ -102,13 +104,13 @@ The user can view the the profiling result as the below screen.
 
 ![Profiling_result](screen_capture/Profiling_result.JPG?raw=true)
 
-## Step 4 run PHI data scan
+## Step 4. Run PHI data scan
 
 PHI scanning must be done after the profiling. It is runnning at the backend and the message window will show the status.
 
 ![Scanning](screen_capture/Scanning.JPG?raw=true)
 
-## Step 5 view the PHI data scan
+## Step 5. View the PHI data scan
 
 The scan result can be viewed by clicking "View Result".  The columns with the high chance conain PHI data will be hightlighed. 
 
@@ -118,7 +120,7 @@ It also can be exported to an Excel file.
 
 ![Scan_result_export](screen_capture/Scan_result_export.JPG?raw=true)
 
-## Step 6 save/load the project
+## Step 6. Save/load the project
 
 The progress of the data profoiling and PHI scanning can be saved and loaded via the menu. The progress is saved in a json file  can be loaded back to continue the work or review the reuslts. 
 
