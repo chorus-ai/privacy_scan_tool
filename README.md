@@ -76,6 +76,7 @@ python -m pip install -r requirement.txt
 python main.py
 ~~~
  
+The user instruciton can be found at [Here ](https://github.com/Luyaochen1/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md) 
  
 
 
