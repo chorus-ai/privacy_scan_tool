@@ -183,7 +183,7 @@ class Ui_ViewPHIScan(object):
         ViewPHIScan.setWindowTitle(_translate("ViewPHIScan", "View PHI Scan Result"))
         self.pushButton.setText(_translate("ViewPHIScan", "Finish"))
         self.pushButton_save.setText(_translate("ViewPHIScan", "Save Result"))
-        self.label.setText(_translate("ViewPHIScan", "View PHI Scan Result Sample Data Profile Size: "+ str(data_profile_sample_size)))
+        self.label.setText(_translate("ViewPHIScan", "View PHI Scan Result:  ( Total {} sample records) ".format(str(data_profile_sample_size)))
 
  
  
