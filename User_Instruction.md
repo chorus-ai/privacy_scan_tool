@@ -75,40 +75,58 @@ python main.py
 ~~~
  
 ## Step 1 decide the source data type 
-User can select the source data type from the dropdown list. 
+User can select the source data type from the dropdown list. To add a new data source, please refer to the "Source data and configuration" session of this document.
 
 ![select_source_db](screen_capture/select_source_db.JPG?raw=true)
 
-The "LOCAL_TEXT_FILE" is for local csv files. If it is selected, user can  choose the folder where the csv files located.
+For local csv files, please select the "LOCAL_TEXT_FILE" option . If it is selected, user can  choose the folder where the csv files located.
 
 ![Model](screen_capture/csv_files.JPG?raw=true)
 
 ## Step 2 select the source tables to scan 
 
-User can select the tables(csv files) from the soruce data base to scan.
+The next step is to select the tables(csv files) from the soruce data base to scan.
 
 ![select_table](screen_capture/select_table.JPG?raw=true")
 
-The selected tables will be displayed in the "Selected Source Tables" table
+The selected tables will be displayed in the "Selected Source Tables" form.
 
-![Model](screen_capture/selected_tables.JPG?raw=true)
-
-select_table.JPG
+![selected_tables](screen_capture/selected_tables.JPG?raw=true)
 
 ## Step 3 run data profiling 
+By clicking the "Genereate DB profile", the data profiling tool will run at the backend to genereate the statistics of the tables.
+
+![Profiling](screen_capture/Profiling.JPG?raw=true)
+
+The user can view the the profiling result as the below screen.
+
+![Profiling_result](screen_capture/Profiling_result.JPG?raw=true)
 
 ## Step 4 run PHI data scan
 
+PHI scanning must be done after the profiling. It is runnning at the backend and the message window will show the status.
+
+![Scanning](screen_capture/Scanning.JPG?raw=true)
+
 ## Step 5 view the PHI data scan
 
+The scan result can be viewed by clicking "View Result".  The columns with the high chance conain PHI data will be hightlighed. 
+
+![Scan_result](screen_capture/Scan_result.JPG?raw=true)
+
+It also can be exported to an Excel file.  
+
+![Scan_result_export](screen_capture/Scan_result_export.JPG?raw=true)
 
 ## Step 6 save/load the project
 
+The progress of the data profoiling and PHI scanning can be saved and loaded via the menu. The progress is saved in a json file  can be loaded back to continue the work or review the reuslts. 
 
 
-![Model](screen_capture/Profiling.JPG?raw=true)
 
-![Model](screen_capture/Profiling_result.JPG?raw=true)
+
+
+ 
  
  
 
