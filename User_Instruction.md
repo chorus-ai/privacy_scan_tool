@@ -87,7 +87,7 @@ The "LOCAL_TEXT_FILE" is for local csv files. If it is selected, user can  choos
 
 User can select the tables(csv files) from the soruce data base to scan.
 
-![Model](screen_capture/select_table.JPG?raw=true height="200")
+![Model](screen_capture/select_table.JPG?raw=true | height="200")
 
 The selected tables will be displayed in the "Selected Source Tables" table
 
