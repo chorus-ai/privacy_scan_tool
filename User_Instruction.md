@@ -125,6 +125,7 @@ It also can be exported to an Excel file.
 The progress of the data profoiling and PHI scanning can be saved and loaded via the menu. The progress is saved in a json file  can be loaded back to continue the work or review the reuslts. 
 
 
+![save_project](screen_capture/save_project.JPG?raw=true)
 
 
 
