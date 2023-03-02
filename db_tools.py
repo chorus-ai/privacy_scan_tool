@@ -138,7 +138,7 @@ def get_table_profile (db_name,table_name,samplesize,text_folder=None):
 
     else:
         profile_df=pd.read_csv(os.path.join(text_folder,table_name))
-        profile_df=profile_df.sample(n=samplesize)
+        profile_df=profile_df.sample(n=samplesize,replace=True)
 
     print(profile_df.shape)
 
