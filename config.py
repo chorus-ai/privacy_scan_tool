@@ -5,7 +5,7 @@ available_dbs = {'PSQL_MIMIC': ["postgresql://userid:password@192.168.0.199:5432
                 'LOCAL_TEXT_FILES': 'LOCAL_TEXT_FILES'
         }
  
-data_profile_sample_size = 500  
+data_profile_sample_size = 1000  
 
 PHI_SCAN_MODEL = './phi_scan/XGBClassifier(V220230227).json'
 
