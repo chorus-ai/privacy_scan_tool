@@ -6,9 +6,9 @@ This is a tools to allow you to check the priovacy issue before share your data 
 
 It is the part of ChoRUS project for NIH
 
-==Notes:==
+**Notes**:
 
-The prediction of PHI data is based on statistics results. We recommend at least 1,000 records for each table to ensure accuracy. 
+The prediction of PHI data is based on statistics results. We recommend to have at least 1,000 records for each table to ensure accuracy. 
 
 
 ## Prerequisite:
