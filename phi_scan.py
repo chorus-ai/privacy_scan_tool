@@ -160,12 +160,15 @@ HIPPA = ["Financial Number",
 "2 MRNOrganization",
 "3 MRNOrganization",
 "4 MRNOrganization",
+"Patient Name", "Full name", "Given name", "Surname", "First name", "Last name",
+"Social Security Number", "SSN", "Social Security", "National Identifier Number", "Taxpayer Identification Number" ,"TIN"
+"Medical Record Number", "MRN", "Medical ID, Record number", "Patient ID", "Health Record Number",
 "Person Location- Facility (Admit)",
 "Admit Date & Time",
 "Discharge Date & Time",
 "Person Address- Zip Code",
-"Birth Date",
-"Age",
+"Birth Date", "Birth year", "Year of birth"
+"Age","Age in years"
 "Ethnic Group",
 "Ethnic Group.1",
 "Race",
@@ -190,7 +193,8 @@ HIPPA = ["Financial Number",
 'intime',
 'outtime',
 'dob',
-'dod']
+'dod',
+]
 
 # %%
 fix_column_name = ['statistics.kurtosis', 'statistics.mean', 'statistics.histogram',
