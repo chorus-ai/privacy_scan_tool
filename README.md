@@ -1,5 +1,12 @@
 # ChoRUS Privacy Scan Tool
 
+## Introduciton :
+
+This is a tools to allow you to check the priovacy issue before share your data with others. 
+
+It is the part of ChoRUS project for NIH)
+
+
 ## Prerequisite:
 Windows 10  or Mac with python3.8 or python3.9 ( with Git tools )
 
