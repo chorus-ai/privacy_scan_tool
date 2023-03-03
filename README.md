@@ -90,5 +90,7 @@ python main.py
 The user instruciton can be found at [Here ](https://github.com/Luyaochen1/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md) 
  
 
+## Version Log :
 
+V_2.28  Inital version for ChoRUS project
 
