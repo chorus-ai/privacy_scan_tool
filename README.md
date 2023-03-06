@@ -93,4 +93,5 @@ The user instruciton can be found at [Here ](https://github.com/Luyaochen1/ChoRU
 ## Version Log :
 
 V_2.28.2023  Inital version for ChoRUS project
+V_3.6.2023  update models
 
