@@ -31,19 +31,20 @@ from pandas.api.types import is_numeric_dtype
 from sklearn.metrics import roc_curve, confusion_matrix , auc, precision_recall_curve, average_precision_score
 from sklearn import metrics
 
-def print_metrics(y_true, y_pred):
+def print_metrics(y_true, y_pred): # threshold must be pre-determined by the training program, otherwise, this test data may contain all y=1 or all y=0, and the threshold will be different from the training program
+    
     false_positive_rate, recall, thresholds = roc_curve(y_true, y_pred)
     roc_auc = auc(false_positive_rate, recall)
     auprc = average_precision_score(y_true, y_pred)
     print('AUC: ',roc_auc, "AUPRC: ", auprc)
 
 
-    fpr, tpr, thresholds = metrics.roc_curve(y_true, y_pred)
+    '''fpr, tpr, thresholds = metrics.roc_curve(y_true, y_pred)
 
     # calculate the g-mean for each threshold
     gmeans = np.sqrt(tpr * (1-fpr))
     ix = np.argmax(gmeans)
-    print('Best Threshold=%f, G-Mean=%.3f' % (thresholds[ix], gmeans[ix]))
+    print('Best Threshold=%f, G-Mean=%.3f' % (thresholds[ix], gmeans[ix]))'''
 
 
 #     tn, fp, fn, tp = confusion_matrix(y_true, y_pred > thresholds[ix]).ravel()
@@ -88,7 +89,11 @@ def print_metrics(y_true, y_pred):
 #     # show the plot
 #     plt.show()
 
-    y_pred_01 = y_pred.apply(lambda x: int(x >= thresholds[ix]))
+    '''y_pred_01 = y_pred.apply(lambda x: int(x >= thresholds[ix]))'''
+    
+    print("threshold: 0.966910")
+    y_pred_01 = y_pred.apply(lambda x: int(x >= 0.966910))
+    
 
     return y_pred_01
 
@@ -153,22 +158,18 @@ def create_training_data(json_data):
     df_train_data_all = df_train_data_all.join(df_train_data_all_mask)
     return df_train_data_all
 
-# %%
-# define 
+
 HIPPA = ["Financial Number",
 "1 MRNOrganization",
 "2 MRNOrganization",
 "3 MRNOrganization",
 "4 MRNOrganization",
-"Patient Name", "Full name", "Given name", "Surname", "First name", "Last name",
-"Social Security Number", "SSN", "Social Security", "National Identifier Number", "Taxpayer Identification Number" ,"TIN"
-"Medical Record Number", "MRN", "Medical ID, Record number", "Patient ID", "Health Record Number",
 "Person Location- Facility (Admit)",
 "Admit Date & Time",
 "Discharge Date & Time",
 "Person Address- Zip Code",
-"Birth Date", "Birth year", "Year of birth"
-"Age","Age in years"
+"Birth Date",
+"Age",#   2023-2-27: change 'age' to non-PHI
 "Ethnic Group",
 "Ethnic Group.1",
 "Race",
@@ -194,7 +195,19 @@ HIPPA = ["Financial Number",
 'outtime',
 'dob',
 'dod',
+'patid','yrdob','state','race','death_dt',
+         'ims_patient_id','year_of_birth','patient_state_code','emr_client_key',
+         'race',
+         'ims_patient_id','year_of_birth','patient_state_code','emr_client_key','client_state_code','client_zip3',
+         'race','patient_id_synth',
+'der_yob','pat_id','patient_id_synth','pat_region','pat_state',
+'brth_yr_nbr','client_id_synth', 'yob','death','dead',
+'ethnity_1_desc','patient_id_synth','src_patient_id_synth','pcp_provider_id_synth','race_desc',
+"Patient Name", "Full name", "Given name", "Surname", "First name", "Last name",
+"Social Security Number", "SSN", "Social Security", "National Identifier Number", "Taxpayer Identification Number" ,"TIN",
+"Medical Record Number", "MRN", "Medical ID, Record number", "Patient ID", "Health Record Number",
 ]
+
 
 # %%
 fix_column_name = ['statistics.kurtosis', 'statistics.mean', 'statistics.histogram',
