@@ -149,7 +149,7 @@ def create_training_data(json_data):
     df_train_data_all = pd.DataFrame(columns = feature_list_2)
     for data in train_data_all:
         df_data = pd.DataFrame(data, columns = feature_list_2, index=[data['column_name']])
-        df_train_data_all = df_train_data_all.append(df_data)
+        df_train_data_all = df_train_data_all._append(df_data)
 
     # create 0/1 mask data
     df_train_data_all_mask = df_train_data_all.notnull().astype('int')
