@@ -1,100 +1,96 @@
 # ChoRUS Privacy Scan Tool
 
-## Introduciton :
+## Introduction
 
-This is a tools to allow you to check the priovacy issue before share your data with others. 
+This tool helps you identify privacy concerns before sharing your data with others. It is a part of the ChoRUS project for NIH.
 
-It is the part of ChoRUS project for NIH
-
-The presentation of the project introduciton can be found [Here ](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/De%E2%80%91identifcation%20of%20Structured%20EHR%20Using%20Machine%20Learning.pptx)
+The project introduction presentation can be found [here](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/De%E2%80%91identifcation%20of%20Structured%20EHR%20Using%20Machine%20Learning.pptx).
 
 **Notes**:
 
-The prediction of PHI data is based on statistics results. We recommend to have at least 1,000 records for each table to ensure accuracy. 
+PHI data predictions are based on statistical results. We recommend having a minimum of 1,000 records for each table to ensure accuracy.
 
+## Prerequisites:
+Windows 10 or Mac with Python 3.8 or 3.9 (with Git tools)
 
-## Prerequisite:
-Windows 10  or Mac with python3.8 or python3.9 ( with Git tools )
+## Mac OS Installation:
 
-## Installation for Mac OS :
+### 1. Create or choose a folder on your workstation
 
-### 1. create or select a folder on your workstation 
-
-### 2. Open a terminal window and go to the selected folder
+### 2. Open a terminal window and navigate to the selected folder
 ~~~
 cd ~/my_folder
 $
 ~~~
 
-### 3. create a python virtual environment
+### 3. Create a Python virtual environment
 ~~~
 python3.8 -m venv ChoRUS_env
 ~~~
-### 4. Active the virtual environment
+
+### 4. Activate the virtual environment
 ~~~
 source ChoRUS_env/bin/activate
 (ChoRUS_env) $
 ~~~
 
-### 5. Clone the package from Github.com 
+### 5. Clone the package from Github
 ~~~
 git clone https://github.com/chorus-ai/ChoRUS_Privacy_Scan.git
 cd ChoRUS_Privacy_Scan
 ~~~
 
-### 6. Install the required python package
+### 6. Install the required Python packages
 ~~~
-python -m pip install -r requirement.txt
+python -m pip install -r requirements.txt
 ~~~
 
-### 7. run the python Privacy Scan Tool
+### 7. Run the Privacy Scan Tool
 ~~~
 python main.py
 ~~~
- 
 
-## installation for Windows :
+## Windows Installation:
 
-### 1. create or select a folder on your workstation 
+### 1. Create or choose a folder on your workstation
 
-### 2. Open a command prompt and go to the selected folder
+### 2. Open a command prompt and navigate to the selected folder
 ~~~
 cd c:\my_folder
 c:\my_folder
 ~~~
 
-### 3. create a python virtual environment
+### 3. Create a Python virtual environment
 ~~~
 python3.8 -m venv ChoRUS_env
 ~~~
-### 4. Active the virtual environment
+
+### 4. Activate the virtual environment
 ~~~
 ChoRUS_env\Scripts\activate.bat
 (ChoRUS_env) c:\my_folder>
 ~~~
 
-### 5. Clone the package from Github.com 
+### 5. Clone the package from Github
 ~~~
 git clone https://github.com/chorus-ai/ChoRUS_Privacy_Scan.git
 cd ChoRUS_Privacy_Scan
 ~~~
 
-### 6. Install the required python package
+### 6. Install the required Python packages
 ~~~
-python -m pip install -r requirement.txt
+python -m pip install -r requirements.txt
 ~~~
 
-### 7. run the python Privacy Scan Tool
+### 7. Run the Privacy Scan Tool
 ~~~
 python main.py
 ~~~
- 
-The user instruciton can be found at [Here ](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md) 
- 
 
-## Version Log :
+The user instructions can be found [here](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md).
 
-V_2.28.2023  Inital version for ChoRUS project
+## Version Log:
 
-V_3.6.2023  update models
+V_2.28.2023  Initial version for ChoRUS project
 
+V_3.6.2023  Updated models
