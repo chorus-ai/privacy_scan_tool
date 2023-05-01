@@ -38,7 +38,7 @@ source ChoRUS_env/bin/activate
 
 ### 5. Clone the package from Github.com 
 ~~~
-git clone https://github.com/Luyaochen1/ChoRUS_Privacy_Scan.git
+git clone https://github.com/chorus-ai/ChoRUS_Privacy_Scan.git
 cd ChoRUS_Privacy_Scan
 ~~~
 
@@ -75,7 +75,7 @@ ChoRUS_env\Scripts\activate.bat
 
 ### 5. Clone the package from Github.com 
 ~~~
-git clone https://github.com/Luyaochen1/ChoRUS_Privacy_Scan.git
+git clone https://github.com/chorus-ai/ChoRUS_Privacy_Scan.git
 cd ChoRUS_Privacy_Scan
 ~~~
 
@@ -89,7 +89,7 @@ python -m pip install -r requirement.txt
 python main.py
 ~~~
  
-The user instruciton can be found at [Here ](https://github.com/Luyaochen1/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md) 
+The user instruciton can be found at [Here ](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md) 
  
 
 ## Version Log :
