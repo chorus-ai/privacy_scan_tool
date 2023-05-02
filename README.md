@@ -87,7 +87,7 @@ python -m pip install -r requirements.txt
 python main.py
 ~~~
 
-The user instructions can be found [here](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md).
+## The user instructions can be found [here](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md).
 
 ## Version Log:
 
