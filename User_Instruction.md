@@ -27,6 +27,11 @@ Do not change the 'LOCAL_TEXT_FILES': 'LOCAL_TEXT_FILES' line.
  
 ### Configuring Sample size
 
+Users can modify the following setup to adjust the sample size. Increasing the sample size can improve accuracy. We recommend having a minimum of 1,000 records for each table to ensure accuracy. However, increasing the sample size may impact performance negatively.
+
+~~~
+data_profile_sample_size = 1000  
+~~~
 
 ## Step 1. Running the Tool on Mac OS:
 
