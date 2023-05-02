@@ -1,12 +1,16 @@
 # ChoRUS Privacy Scan Tool User Guide V0.1
 
-## Configuring Source Data
+## Configuration 
+
+Modify the config.py file to edit the configurations. 
+
+### Configuring Source Data
 
 Modify the source data by editing the config.py file.
 
 The tool supports two types of source data:
 
-### Postgresql Database:
+#### Postgresql Database:
 ~~~
 available_dbs = {'PSQL_MIMIC': ["postgresql://userid:password@192.168.0.199:5432/mimic","mimiciii"],
                 'LOCAL_TEXT_FILES': 'LOCAL_TEXT_FILES'
@@ -15,12 +19,14 @@ available_dbs = {'PSQL_MIMIC': ["postgresql://userid:password@192.168.0.199:5432
 
 Here, "mimic" is the database name and "mimiciii" is the data schema name.
 
-### Plain Text Files:
+#### Plain Text Files:
 
 Comma-separated values (CSV) files with a header. Select the folder containing the source data in the tool.
 
 Do not change the 'LOCAL_TEXT_FILES': 'LOCAL_TEXT_FILES' line.
  
+### Configuring Sample size
+
 
 ## Step 1. Running the Tool on Mac OS:
 
