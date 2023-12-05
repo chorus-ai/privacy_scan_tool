@@ -89,8 +89,13 @@ python main.py
 
 ## The user instructions can be found [here](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/User_Instruction.md).
 
+
 ## Version Log:
 
-V_2.28.2023  Initial version for ChoRUS project
+V_2.28.2023  Initial version for RADx-rad and ChoRUS project
 
 V_3.6.2023  Updated models
+
+## Acknowledgemant
+
+This project is supported by RADx-rad DCC (1U24LM013755) and ChoRUS (OT2OD032701)
