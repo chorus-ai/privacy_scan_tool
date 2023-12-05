@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This tool helps you identify privacy concerns before sharing your data with others. It is a part of the ChoRUS project for NIH.
+This tool helps you identify privacy concerns before sharing your data with others. It is a part of the RASx-rad and ChoRUS project for NIH.
 
 The project introduction presentation can be found [here](https://github.com/chorus-ai/ChoRUS_Privacy_Scan/blob/main/De%E2%80%91identifcation%20of%20Structured%20EHR%20Using%20Machine%20Learning.pptx).
 
